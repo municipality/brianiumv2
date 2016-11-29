@@ -2,8 +2,32 @@ title {
     display: block;
     width: 100vw;
     height: 100vh;
+    position: relative;
+    background-image: url('../flowers.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 title-text {
-    display: block;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 75%;
+    width: 40%;
+
+    @include transform(translate(-50%, -50%));
+
+    .first-line {
+        position: relative;
+        text-align: right;
+        right: 3em;
+        font-size: 36;
+        color: $blue;
+    }
+
+    .second-line {
+        color: white;
+        font-size: 20;
+    }
 }
