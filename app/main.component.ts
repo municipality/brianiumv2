@@ -1,13 +1,12 @@
 import {Component, AfterViewInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 
-import {Title} from './components/homepage/title';
 
 @Component({
     selector: 'app',
-    directives: [Title],
+    directives: [],
     template: `
-        <title></title>
+        <router-outlet></router-outlet>
     `
 })
 export class MainComponent implements AfterViewInit {
